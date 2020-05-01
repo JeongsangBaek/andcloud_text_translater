@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "780495745034",
+    "firebase_url": "https://andcloud-text-translator.firebaseio.com",
+    "project_id": "andcloud-text-translator",
+    "storage_bucket": "andcloud-text-translator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780495745034:android:57320a96d1bbf35f742ff3",
+        "android_client_info": {
+          "package_name": "com.everysoft.everytexttranslator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780495745034-0afg226fra41n46c210b5k6a4ho1u7mv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3l7Xl-LFKPMVpSqB2fobzopHU97Gs2Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780495745034-0afg226fra41n46c210b5k6a4ho1u7mv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
