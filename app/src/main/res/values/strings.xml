@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Every Text Translator</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="andcloud_text_translator_title">AndCloud Text Translator</string>
+    <string name="translate">Translate</string>
 </resources>
