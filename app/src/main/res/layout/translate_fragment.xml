@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto"
-            android:text="AndCloud Translator"
+            android:text="@string/andcloud_translator"
             android:textAlignment="center"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,6 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:contentDescription="@string/change_the_language"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/android_translator_text"
@@ -60,32 +61,47 @@
             app:layout_constraintTop_toBottomOf="@+id/android_translator_text" />
 
         <EditText
+            android:id="@+id/translate_input_text"
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/translate_input_hint"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@+id/translate_output_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/from_language_spinner"
+            android:importantForAutofill="no" />
+
+        <EditText
             android:id="@+id/translate_output_text"
-            android:layout_width="366dp"
+            android:layout_width="360dp"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="textPersonName"
+            android:hint="@string/output_text_of_translation"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/translate_input_text" />
+            app:layout_constraintTop_toBottomOf="@+id/translate_input_text"
+            android:importantForAutofill="no" />
 
-        <EditText
-            android:id="@+id/translate_input_text"
-            android:layout_width="369dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="16dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:hint="What do you wanna translate?"
-            android:inputType="textMultiLine"
-            app:layout_constraintBottom_toTopOf="@+id/translate_output_text"
+        <Button
+            android:id="@+id/translate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/translate"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/from_language_spinner" />
+            app:layout_constraintTop_toBottomOf="@+id/translate_output_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
