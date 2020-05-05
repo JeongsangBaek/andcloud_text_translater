@@ -76,7 +76,7 @@
             app:layout_constraintTop_toBottomOf="@+id/from_language_spinner"
             android:importantForAutofill="no" />
 
-        <EditText
+        <TextView
             android:id="@+id/translate_output_text"
             android:layout_width="360dp"
             android:layout_height="48dp"
@@ -99,6 +99,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:text="@string/translate"
+            android:onClick="@{() -> translateViewModel.onTranslateText()}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/translate_output_text" />
