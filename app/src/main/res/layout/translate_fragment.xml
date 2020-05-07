@@ -63,7 +63,7 @@
         <EditText
             android:id="@+id/translate_input_text"
             android:layout_width="360dp"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="16dp"
             android:ems="10"
@@ -79,12 +79,12 @@
         <TextView
             android:id="@+id/translate_output_text"
             android:layout_width="360dp"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textLongMessage"
             android:hint="@string/output_text_of_translation"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -99,7 +99,6 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:text="@string/translate"
-            android:onClick="@{() -> translateViewModel.onTranslateText()}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/translate_output_text" />

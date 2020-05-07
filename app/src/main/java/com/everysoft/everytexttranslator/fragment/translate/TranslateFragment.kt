@@ -33,6 +33,10 @@ class TranslateFragment : Fragment() {
             container,
             false
         )
+        binding.translateButton.setOnClickListener {
+            val inputText = binding.translateInputText.text.toString()
+            viewModel.doTranslate(inputText)
+        }
 
         //Getting viewModel
         viewModel = ViewModelProvider(this).get(TranslateViewModel::class.java)
@@ -51,5 +55,4 @@ class TranslateFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
     }
-
 }

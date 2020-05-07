@@ -21,9 +21,11 @@ class TranslateViewModel : ViewModel() {
 
     }
 
-    fun onTranslateText() {
-        //TODO: getting input and translate it, set output
-    }
+    fun doTranslate(text: String) {
+        //TODO: use Firebase Translate API for translating text
 
+        //prototype. reverse the string and return
+        _translateOutputText.value = text.reversed()
+    }
 
 }
