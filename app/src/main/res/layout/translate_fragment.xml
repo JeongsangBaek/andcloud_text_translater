@@ -69,12 +69,13 @@
             android:ems="10"
             android:gravity="start|top"
             android:hint="@string/translate_input_hint"
-            android:inputType="textMultiLine"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:imeOptions="actionDone"
             app:layout_constraintBottom_toTopOf="@+id/translate_output_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/from_language_spinner"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/from_language_spinner" />
 
         <TextView
             android:id="@+id/translate_output_text"
