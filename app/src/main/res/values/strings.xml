@@ -10,7 +10,7 @@
     <string name="change_the_language">Change the language</string>
     <string name="output_text_of_translation">This is an output of translation</string>
     <string-array name="translate_language_array">
-        <item>English</item>
-        <item>Korean</item>
+        <item>EN</item>
+        <item>KO</item>
     </string-array>
 </resources>

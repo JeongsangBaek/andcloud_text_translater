@@ -36,7 +36,10 @@ class TranslateFragment : Fragment() {
         )
         binding.translateButton.setOnClickListener {
             val inputText = binding.translateInputText.text.toString()
-            viewModel.doTranslate(inputText)
+            viewModel.doTranslate(
+                binding.fromLanguageSpinner.selectedItem.toString(),
+                binding.toLanguageSpinner.selectedItem.toString(),
+                inputText)
         }
 
         //TODO: Create dropdown list from API
@@ -50,9 +53,9 @@ class TranslateFragment : Fragment() {
             binding.toLanguageSpinner.adapter = adapter
 
             //TODO. set selection based on saved state
-            val fromPos = adapter.getPosition("English")
+            val fromPos = adapter.getPosition("EN")
             binding.fromLanguageSpinner.setSelection(fromPos);
-            val toPos = adapter.getPosition("Korean")
+            val toPos = adapter.getPosition("KO")
             binding.toLanguageSpinner.setSelection(toPos)
         }
 
