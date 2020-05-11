@@ -54,7 +54,7 @@ class TranslateFragment : Fragment() {
 
             //TODO. set selection based on saved state
             val fromPos = adapter.getPosition("EN")
-            binding.fromLanguageSpinner.setSelection(fromPos);
+            binding.fromLanguageSpinner.setSelection(fromPos)
             val toPos = adapter.getPosition("KO")
             binding.toLanguageSpinner.setSelection(toPos)
         }

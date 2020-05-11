@@ -6,7 +6,7 @@
     <string name="andcloud_text_translator_title">AndCloud Text Translator</string>
     <string name="translate">Translate</string>
     <string name="andcloud_translator">AndCloud Translator</string>
-    <string name="translate_input_hint">What do you wanna translate?</string>
+    <string name="translate_input_hint">What do you want to translate?</string>
     <string name="change_the_language">Change the language</string>
     <string name="output_text_of_translation">This is an output of translation</string>
     <string-array name="translate_language_array">
