@@ -20,8 +20,6 @@ class TranslateViewModel : ViewModel() {
 
     init {
         Log.i("TranslateViewModel", "TranslateViewModel Created!")
-        //TODO: Initialize translate api
-
     }
 
     fun doTranslate(sourceLang: String, targetLang: String, text: String) {
@@ -52,5 +50,4 @@ class TranslateViewModel : ViewModel() {
             _translateOutputText.value = "! Invalid translation: ${e.message}"
         }
     }
-
 }
