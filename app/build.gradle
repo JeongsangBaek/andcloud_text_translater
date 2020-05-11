@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.everysoft.everytexttranslator"
-        minSdkVersion 19
+        minSdkVersion 21    // for Multi-dex support (> 64K)
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -62,4 +62,8 @@ dependencies {
     // Testing Navigation
     androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
     implementation 'androidx.appcompat:appcompat:1.0.0'
+
+    //Firebase translation API
+    implementation 'com.google.firebase:firebase-ml-natural-language:22.0.0'
+    implementation 'com.google.firebase:firebase-ml-natural-language-translate-model:20.0.7'
 }
